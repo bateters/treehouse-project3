@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Form Project</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Form Project</title>
+    </head>
     <body>
-        <header class="main-header">
-            <h1><span class="text-is-white">THE CODE REVIEW</span></h1>
+        <header class="main-header text-is-white">
+            <h1>THE CODE REVIEW</h1>
         </header>
         <main>
             <form action="" method="POST">
                 <header class="container form-header">
                     <h2>Signup for our newsletter</h2>
-                    <p><span class="text-is-light">Get the latest news on how your code is doing right in your inbox</span></p>
+                    <p class="text-is-light">Get the latest news on how your code is doing right in your inbox</p>
                 </header>
                 <section class="contact-info container">
                     <fieldset>
@@ -44,7 +44,7 @@
                         </p>
                         <p>
                             <label for="state">State</label>
-                            <select name="user_state" id="state">
+                            <select name="user_state" id="state" class="text-is-light">
                                     <option value="" disabled selected hidden>Choose State</option>
                                     <option value="AL">Alabama</option>
                                     <option value="AK">Alaska</option>
@@ -109,20 +109,27 @@
                     <fieldset>
                         <legend><h3>Newsletter</h3></legend>
                         
-                        <p><label>Select the newsletters you would like to recieve</label></p>
+                        <p>
+                            <label>Select the newsletters you would like to recieve</label>
+                        </p>
                         <ul>
                             <li>
-                                <input type="checkbox" id="html-news" value="html-news" name="news"><label for="html-news">HTML News</label>
+                                <input type="checkbox" id="html-news" value="html-news" name="news">
+                                <label for="html-news">HTML News</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="css-news" value="css-news" name="news"><label for="css-news">CSS News</label>
+                                <input type="checkbox" id="css-news" value="css-news" name="news">
+                                <label for="css-news">CSS News</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="javascript-news" value="javascript-news" name="news"><label for="javascript-news">Javascript News</label>
+                                <input type="checkbox" id="javascript-news" value="javascript-news" name="news">
+                                <label for="javascript-news">Javascript News</label>
                             </li>
                         </ul>
 
-                        <p><label>Newsletter format</label></p>
+                        <p>
+                            <label>Newsletter format</label>
+                        </p>
                         <ul>
                             <li>
                                 <input type="radio" id="html-format" value="html-format" name="format">
@@ -136,7 +143,8 @@
                         <p>
                             <label for="topics">Other topics you'd like to hear about</label>
                         </p>
-                        <textarea name="suggested_topics" id="topics" cols="30" rows="10"></textarea>
+
+                        <textarea name="suggested_topics" id="topics"></textarea>
                         <button type="submit"  class="text-is-white">Sign Up</button>
                     </fieldset>
                 </section>
